@@ -1,17 +1,39 @@
 div{
-  height: 100px;
+  height: 150px;
   border: 1px solid #000;
   margin-bottom: 10px;
   text-align: center;
   width: 30%;
+  margin: 10px;
+  background-color: blue;
 }
 
 p {
   font-family: Helvetica;
 }
-
+.header {
+  width: 100%;
+  font-size: 40px;
+}
 .half {
+  float: left;
 }
 
 .full{
+  clear: left;
+}
+nav {
+  position: fixed;
+}
+/*@media(min-width: 800px) {
+  div {
+    background-color: green;
+  }
+}*/
+
+/* when you shrink the screen below 800px wide the div color will change*/
+@media(max-width: 800px) {
+  div {
+    background-color: yellow;
+  }
 }
